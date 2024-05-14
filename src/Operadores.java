@@ -36,8 +36,17 @@ public class Operadores {
       boolean condicion2=false;
 
       boolean resultadoAND=condicion1 && condicion2; //Si las dos son TRUE, el resultado es TRUE
-      boolean resultadoOR=condicion1 || condicion2; //La primera que sea TRUE
-      boolean resultadoNOT=!condicion1;
+      boolean resultadoOR=condicion1 || condicion2; //uno de los dos debe ser TRUE para que el resultado sea TRUE
+      boolean resultadoNOT=!condicion1; //lo opuesto a lo que tenga asignado anteriormente
+
+      /*
+       * TABLA DE LA VERDAD
+       * 
+       * AND      OR       NOT
+       *  |V|F     |V|F    v|!F
+       * V|V|F    V|V|V    F|!V
+       * F|F|F    F|V|F
+       */
 
       System.out.println(resultadoAND);
       System.out.println(resultadoOR);
